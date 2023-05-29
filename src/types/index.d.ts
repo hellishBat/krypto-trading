@@ -56,7 +56,7 @@ export interface LangProps {
   unavailable: boolean
 }
 
-export type CountdownData = {
+export interface CountdownData {
   time: number
   text: string
 }
@@ -134,16 +134,16 @@ export interface FooterNavProps {
   links: (HyperlinkItem | AnchorItem)[]
 }
 
-export type CreditLink = {
+export interface CreditLink {
   href: string
   label: string
 }
 
-export type FooterCreditsProps = {
+export interface FooterCreditsProps {
   links: CreditLink[]
 }
 
-interface SocialLink {
+export interface SocialLink {
   href: string
   icon: JSX.Element
 }
