@@ -8,9 +8,7 @@ const Layout: FC<ChildrenTypes> = ({ children }) => {
   return (
     <>
       <Header />
-      <main className="bg-gradient-to-bl from-rose-400 via-fuchsia-500 to-indigo-500 text-white">
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </>
   )

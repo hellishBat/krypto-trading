@@ -1,33 +1,23 @@
 // Header
-import { useEffect, useState, useRef } from 'react'
-import { Container } from '@/components'
+import React from 'react'
+import { Container, Logo } from '@/components'
+import { Nav } from './components'
+import { useScroll } from '@/hooks'
+import { navLinks } from '@/data/index.json'
 
-const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const headerRef = useRef(null)
-
-  const handleScroll = () => {
-    const offsetY = window.scrollY
-    if (offsetY >= 80) {
-      setIsScrolled(true)
-    } else {
-      setIsScrolled(false)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', () => handleScroll)
-    }
-  }, [])
+const Header: React.FC = () => {
+  const isScrolled = useScroll()
 
   return (
-    <header className={`py-4 ${isScrolled ? 'shadow-md transition-colors' : ''}`} ref={headerRef}>
+    <header
+      className={`fixed left-0 top-0 z-50 w-full py-3 text-white transition duration-500 md:py-4 lg:py-8 ${
+        isScrolled ? 'bg-navy shadow-md' : ''
+      }`}
+    >
       <Container>
-        <div className="header__inner">
-          <a href="#">Link</a>
+        <div className="mx-auto flex items-center">
+          <Logo className="flex-shrink-0" />
+          <Nav navLinks={navLinks} />
         </div>
       </Container>
     </header>

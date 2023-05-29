@@ -1,22 +1,25 @@
 // Home
 import ContextProviders from '@/context/ContextProviders'
 import Layout from '@/layouts'
-import { Container } from '@/components'
-import { LogoReact, LogoVite, LogoTS, LogoTW } from '@/assets'
+import Hero from '@/modules/Hero'
+import HowTo from '@/modules/HowTo'
+import Cryptos from '@/modules/Cryptos'
+import Features from '@/modules/Features'
+import Downloads from '@/modules/Downloads'
+import Testimonials from '@/modules/Testimonials'
+import University from '@/modules/University'
 
 const Home = () => {
   return (
     <ContextProviders>
       <Layout>
-        <section className="py-16">
-          <Container>
-            <h1 className="flex items-center justify-center text-4xl font-medium">
-              <LogoVite className="mr-2" /> Vite Boilerplate (<LogoReact className="mr-2" />
-              React <LogoTS className="mx-2" /> TypeScript + <LogoTW className="mr-2" /> Tailwind
-              CSS)
-            </h1>
-          </Container>
-        </section>
+        <Hero />
+        <HowTo />
+        <Cryptos />
+        <Features />
+        <Downloads />
+        <Testimonials />
+        <University />
       </Layout>
     </ContextProviders>
   )
