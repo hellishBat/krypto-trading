@@ -11,7 +11,7 @@ import { testimonials } from '@/data/index.json'
 import {
   IconUiArrowPrev,
   IconUiArrowNext,
-  coinBtc,
+  // coinBtc,
   coinEth,
   coinMn,
   imgAuthor01,
@@ -44,7 +44,7 @@ const Testimonials: React.FC = () => {
   const swiperRef = useRef<any>(null)
 
   const mnPlx = useParallax({ speed: 5 })
-  const btcPlx = useParallax({ speed: 10 })
+  // const btcPlx = useParallax({ speed: 10 })
   const ethPlx = useParallax({ speed: -10 })
 
   const cardsContent: Testimonial[] = testimonials.items.map((item, idx) => ({
@@ -72,11 +72,11 @@ const Testimonials: React.FC = () => {
               style={{ backgroundImage: `url(${coinMn})` }}
               ref={mnPlx.ref}
             ></figure>
-            <figure
+            {/* <figure
               className="pointer-events-none absolute -bottom-[10%] -left-[9%] -z-[1] h-[8.796vh] w-[8.796vh] bg-contain sm:-left-[4%] md:-bottom-[25%]"
               style={{ backgroundImage: `url(${coinBtc})` }}
               ref={btcPlx.ref}
-            ></figure>
+            ></figure> */}
             <figure
               className="pointer-events-none absolute -bottom-[33%] -right-[18%] -z-[1] h-[14.815vh] w-[14.815vh] bg-contain sm:-right-[2%]"
               style={{ backgroundImage: `url(${coinEth})` }}
