@@ -2,7 +2,7 @@
 import React, { useRef, useEffect } from 'react'
 import { useParallax } from 'react-scroll-parallax'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination } from 'swiper'
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper'
 import 'swiper/scss'
 import 'swiper/css/pagination'
 import { usePricesRequest } from '@/hooks'
@@ -77,11 +77,17 @@ const Cryptos: React.FC = () => {
             ></figure>
           </div>
           <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Keyboard, Mousewheel]}
             spaceBetween={32}
             slidesPerView={'auto'}
             centeredSlides={true}
             loop={true}
+            keyboard={{
+              enabled: true,
+            }}
+            mousewheel={{
+              forceToAxis: true,
+            }}
             navigation={{
               prevEl: navigationPrevRef.current,
               nextEl: navigationNextRef.current,

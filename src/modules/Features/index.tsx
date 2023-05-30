@@ -1,6 +1,6 @@
 // Features
 import { FC } from 'react'
-import { useParallax } from 'react-scroll-parallax'
+// import { useParallax } from 'react-scroll-parallax'
 import { Container, Section, SectionHeader, Typography } from '@/components'
 import { FeaturesCard } from './components'
 import { features } from '@/data/index.json'
@@ -11,7 +11,7 @@ import {
   IconFeatures04,
   IconFeatures05,
   IconFeatures06,
-  coinBtc,
+  // coinBtc,
 } from '@/assets'
 
 const featureIcons = [
@@ -41,7 +41,7 @@ const featuresCardContent = features.items.map((item, idx) => ({
 }))
 
 const Features: FC = () => {
-  const btcPlx = useParallax({ speed: -10 })
+  // const btcPlx = useParallax({ speed: -10 })
 
   return (
     <Section className="pb-20 md:pb-28 lg:pb-36" id="featuresSection">
@@ -51,11 +51,11 @@ const Features: FC = () => {
       </SectionHeader>
       <Container>
         <div className="relative z-0">
-          <figure
+          {/* <figure
             className="pointer-events-none absolute -right-[15%] -top-[18%] -z-[1] h-[8.796vh] w-[8.796vh] bg-contain sm:-right-[6%] sm:-top-[25%] lg:-top-[40%]"
             style={{ backgroundImage: `url(${coinBtc})` }}
             ref={btcPlx.ref}
-          ></figure>
+          ></figure> */}
 
           <div className="grid justify-center gap-8 sm:grid-cols-2 xl:grid-cols-3 ">
             {featuresCardContent.map((item, idx) => (

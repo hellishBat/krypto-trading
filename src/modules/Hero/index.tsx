@@ -7,7 +7,7 @@ import { Countdown } from './components'
 import { hero } from '@/data/index.json'
 import {
   heroBg,
-  coinBtc,
+  // coinBtc,
   coinEth,
   coinMn,
   coinLtc01,
@@ -32,7 +32,7 @@ const Hero: FC = () => {
     ...countdownTime[idx],
   }))
 
-  const btcPlx = useParallax({ speed: 10 })
+  // const btcPlx = useParallax({ speed: 10 })
   const ethPlx = useParallax({ speed: -10 })
   const ltcPlx = useParallax({ speed: -15 })
   const mnPlx = useParallax({ speed: 15 })
@@ -45,11 +45,11 @@ const Hero: FC = () => {
     >
       <Container>
         <div className="relative z-0 flex min-h-[30rem] flex-col items-center py-28 sm:min-h-[36rem] md:min-h-[48rem] lg:py-40 xl:py-48">
-          <figure
+          {/* <figure
             className="pointer-events-none absolute -left-[10%] top-1/3 -z-[1] h-[8.796vh] w-[8.796vh] bg-contain sm:left-0"
             style={{ backgroundImage: `url(${coinBtc})` }}
             ref={btcPlx.ref}
-          ></figure>
+          ></figure> */}
           <figure
             className="pointer-events-none absolute -bottom-[18%] -left-[16%] -z-[1] h-[14.815vh] w-[14.815vh] bg-contain sm:-left-[12%] lg:-left-[6%]"
             style={{ backgroundImage: `url(${coinEth})` }}
