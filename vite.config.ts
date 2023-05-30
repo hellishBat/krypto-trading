@@ -30,7 +30,9 @@ export default defineConfig({
         data: APP_INFO,
       },
     }),
-    imagetools(),
+    imagetools({
+      force: true,
+    }),
     svgr(),
     chunkSplitPlugin({
       strategy: 'single-vendor',
