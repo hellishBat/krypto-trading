@@ -43,4 +43,8 @@ export default defineConfig({
       '@/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
+  define: {
+    'process.env.PUBLIC_URL': JSON.stringify('/'),
+  },
+  assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif'],
 })

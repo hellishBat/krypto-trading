@@ -1,16 +1,16 @@
 // Assets
-// Images (Backgrounds, then content img)
-import heroBg from '@/assets/images/bg/hero-bg.jpg?format=webp'
-import downloadsBg from '@/assets/images/bg/downloads-bg.jpg?format=webp'
-import previewHowTo01 from '@/assets/images/bg/how-to-01.jpg?format=webp'
-import previewHowTo02 from '@/assets/images/bg/how-to-02.jpg?format=webp'
-import previewHowTo03 from '@/assets/images/bg/how-to-03.jpg?format=webp'
-import previewHowTo04 from '@/assets/images/bg/how-to-04.jpg?format=webp'
-import coinBtc from '@/assets/images/bg/coin-btc.png?format=webp'
-import coinEth from '@/assets/images/bg/coin-eth.png?format=webp'
-import coinLtc01 from '@/assets/images/bg/coin-ltc-01.png?format=webp'
-import coinLtc02 from '@/assets/images/bg/coin-ltc-02.png?format=webp'
-import coinMn from '@/assets/images/bg/coin-mn.png?format=webp'
+// Images (Content)
+// import heroBg from '@/assets/images/bg/hero-bg.jpg?format=webp'
+// import downloadsBg from '@/assets/images/bg/downloads-bg.jpg?format=webp'
+// import previewHowTo01 from '@/assets/images/bg/how-to-01.jpg?format=webp'
+// import previewHowTo02 from '@/assets/images/bg/how-to-02.jpg?format=webp'
+// import previewHowTo03 from '@/assets/images/bg/how-to-03.jpg?format=webp'
+// import previewHowTo04 from '@/assets/images/bg/how-to-04.jpg?format=webp'
+// import coinBtc from '@/assets/images/bg/coin-btc.png?format=webp'
+// import coinEth from '@/assets/images/bg/coin-eth.png?format=webp'
+// import coinLtc01 from '@/assets/images/bg/coin-ltc-01.png?format=webp'
+// import coinLtc02 from '@/assets/images/bg/coin-ltc-02.png?format=webp'
+// import coinMn from '@/assets/images/bg/coin-mn.png?format=webp'
 import imgCryptos01 from '@/assets/images/content/cryptos-01.jpg?format=webp'
 import imgCryptos02 from '@/assets/images/content/cryptos-02.jpg?format=webp'
 import imgCryptos03 from '@/assets/images/content/cryptos-03.jpg?format=webp'
@@ -64,6 +64,21 @@ import { ReactComponent as IconUiCheck } from '@/assets/svg/ui-check.svg'
 import { ReactComponent as IconUiMenuClose } from '@/assets/svg/ui-menu-close.svg'
 import { ReactComponent as IconUiMenuOpen } from '@/assets/svg/ui-menu-open.svg'
 import { ReactComponent as IconUiPlay } from '@/assets/svg/ui-play.svg'
+
+const publicFolder = process.env.PUBLIC_URL
+
+// Images (Backgrounds)
+const heroBg = `${publicFolder}/images/bg/hero-bg.jpg`
+const downloadsBg = `${publicFolder}/images/bg/downloads-bg.jpg`
+const previewHowTo01 = `${publicFolder}/images/bg/how-to-01.jpg`
+const previewHowTo02 = `${publicFolder}/images/bg/how-to-02.jpg`
+const previewHowTo03 = `${publicFolder}/images/bg/how-to-03.jpg`
+const previewHowTo04 = `${publicFolder}/images/bg/how-to-04.jpg`
+const coinBtc = `${publicFolder}/images/bg/coin-btc.png`
+const coinEth = `${publicFolder}/images/bg/coin-eth.png`
+const coinLtc01 = `${publicFolder}/images/bg/coin-ltc-01.png`
+const coinLtc02 = `${publicFolder}/images/bg/coin-ltc-02.png`
+const coinMn = `${publicFolder}/images/bg/coin-mn.png`
 
 export {
   heroBg,
